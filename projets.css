@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.conteneur-projets {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    /* Mise en page en grille pour le responsive */
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.carte-projet {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.carte-projet img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Assure que l'image couvre la zone */
+}
+
+.carte-projet h2, .carte-projet p {
+    padding: 0 15px;
+    margin: 10px 0;
+}
+
+.bouton-voir {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    margin-top: auto; /* Pousse le bouton vers le bas */
+}
+
+footer {
+    background-color: #333;
+    color: #bbb;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
